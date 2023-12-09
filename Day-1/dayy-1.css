@@ -1,0 +1,61 @@
+body{
+    background-image: url("https://images.pexels.com/photos/459469/pexels-photo-459469.jpeg?cs=srgb&dl=basil-delicious-food-459469.jpg&fm=jpg");
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:60vh;
+    justify-content: center;
+    width:25vw;
+    text-align: center;
+    margin:none;
+    outline: none;
+    padding:10px;
+    border-radius: 16px;
+}
+.input_style{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    padding:0.5rem;
+    border:none;
+    outline:none;
+    height: 4vh;
+    background-color: white;
+    width:23vw;
+    border-bottom: 3px solid transparent;
+    border-radius: 10px;
+    margin: 12px;
+}
+.input_style:focus{
+    border-bottom: 3px solid rgb(215, 215, 73);
+}
+.shadow{
+    box-shadow:
+  56.7px 56.7px 2.2px rgba(0, 0, 0, 0.033),
+  67.2px 67.2px 5.3px rgba(0, 0, 0, 0.041),
+  74.5px 74.5px 10px rgba(0, 0, 0, 0.047),
+  82px 82px 17.9px rgba(0, 0, 0, 0.054),
+  90.4px 90.4px 33.4px rgba(0, 0, 0, 0.062),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.button{
+    background-color: rgb(200, 175, 229);
+    border-radius: 10px;
+    font-size: 20px;
+    height:5vh;
+    width:15vw;
+    border:none;
+    outline:none;
+    margin: 5px;
+}

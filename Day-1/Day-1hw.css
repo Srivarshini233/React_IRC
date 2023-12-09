@@ -1,0 +1,40 @@
+.bg-container{
+    background-image: url("https://images.pexels.com/photos/459469/pexels-photo-459469.jpeg?cs=srgb&dl=basil-delicious-food-459469.jpg&fm=jpg");
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    margin: 0px;
+}
+.nav-color{
+    background-color:white;
+    color:black;
+    font-size: 25px;
+    font-style: italic;
+}
+.heading1{
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-style:italic;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:170px;
+}
+.shadow{
+    box-shadow:
+  56.7px 56.7px 2.2px rgba(0, 0, 0, 0.033),
+  67.2px 67.2px 5.3px rgba(0, 0, 0, 0.041),
+  74.5px 74.5px 10px rgba(0, 0, 0, 0.047),
+  82px 82px 17.9px rgba(0, 0, 0, 0.054),
+  90.4px 90.4px 33.4px rgba(0, 0, 0, 0.062),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.homepage{
+    background-color: azure;
+}
+
+
+   
