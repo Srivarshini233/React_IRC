@@ -1,0 +1,45 @@
+.container{
+    height:20vh;
+    width:20vw;
+    background-color: aquamarine;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.body{
+    background-image:"https://img.freepik.com/free-vector/luxury-background-with-golden-particles-background_1035-17344.jpg?size=626&ext=jpg&ga=GA1.1.1919713829.1702352362&semt=ais";
+   background-size: cover;
+   width:100px;
+   
+}
+.bg-container{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+button {
+    margin: 12px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    font-family: 'Damion', cursive;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+  }
+  
+  button:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }

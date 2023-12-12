@@ -1,15 +1,8 @@
 
+import './Assets/CSS/WelcomeToggle.css';
+import WelcomeToggle from './component/WelcomeToggle';
 const App=()=>{
-return(
-    <div>
-<nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
-</nav>
-<nav className="navbar bg-primary" data-bs-theme="dark">
-</nav>
-<nav className="navbar">
- 
-</nav>
-</div>
-)
+return (
+<WelcomeToggle/>)
 }
 export default App;
