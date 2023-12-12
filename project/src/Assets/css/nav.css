@@ -1,0 +1,111 @@
+.container{
+    height:30vh;
+    width:25vw;
+    background-color: aquamarine;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    overflow: hidden;
+}
+.body{
+   background-image:"https://img.freepik.com/free-vector/luxury-background-with-golden-particles-background_1035-17344.jpg?size=626&ext=jpg&ga=GA1.1.1919713829.1702352362&semt=ais";
+   background-size: cover;
+   width:100vw;
+   height:100vh;
+   overflow: hidden;
+}
+.bg-container{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    overflow: hidden;
+}
+.button{
+    height:4vh;
+    width:5vw;
+}
+  .navbar{
+    background-color: #d9a7c7;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .navlinks{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .button-design{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav-text{
+    font-size: 30px;
+    padding: 10px;
+    list-style-type: none;
+  }
+  .bg-container{
+    height:100vh;
+    width:100vw;
+  }
+.container1{
+        background: #d9a7c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height:35vh;
+        width:25vw;
+        text-align: center;
+        margin:none;
+        outline: none;
+        padding:5px;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+}
+.shadow{
+    box-shadow:
+  56.7px 56.7px 2.2px rgba(0, 0, 0, 0.033),
+  67.2px 67.2px 5.3px rgba(0, 0, 0, 0.041),
+  74.5px 74.5px 10px rgba(0, 0, 0, 0.047),
+  82px 82px 17.9px rgba(0, 0, 0, 0.054),
+  90.4px 90.4px 33.4px rgba(0, 0, 0, 0.062),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.input_style{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    padding:0.5rem;
+    border:none;
+    outline:none;
+    height: 4vh;
+    background-color: white;
+    width:23vw;
+    border-bottom: 3px solid transparent;
+    border-radius: 10px;
+    margin: 12px;
+}
+.input_style:focus{
+    border-bottom: 0px solid rgb(215, 215, 73);
+}
+.button{
+    background-color: rgb(200, 175, 229);
+    border-radius: 10px;
+    font-size: 20px;
+    height:5vh;
+    padding:10px;
+    width:10vw;
+    border:none;
+    outline:none;
+}
