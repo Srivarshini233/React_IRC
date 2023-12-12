@@ -1,6 +1,6 @@
 .container{
-    height:20vh;
-    width:20vw;
+    height:60vh;
+    width:25vw;
     background-color: aquamarine;
     border-radius: 16px;
     display: flex;
@@ -10,10 +10,10 @@
     padding:20px;
 }
 .body{
-    background-image:"https://img.freepik.com/free-vector/luxury-background-with-golden-particles-background_1035-17344.jpg?size=626&ext=jpg&ga=GA1.1.1919713829.1702352362&semt=ais";
+   background-image:"https://img.freepik.com/free-vector/luxury-background-with-golden-particles-background_1035-17344.jpg?size=626&ext=jpg&ga=GA1.1.1919713829.1702352362&semt=ais";
    background-size: cover;
-   width:100px;
-   
+   width:100vw;
+   height:100vh;
 }
 .bg-container{
     display: flex;
@@ -22,24 +22,29 @@
     align-items: center;
     padding:20px;
 }
-button {
-    margin: 12px;
-    height: 50px;
-    width: 120px;
-    border-radius: 10px;
-    background: #333;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
-    font-family: 'Damion', cursive;
-    border: none;
-    font-size: 16px;
-    color: rgb(161, 161, 161);
-    transition: 500ms;
+.button{
+    height:4vh;
+    width:5vw;
+}
+  .navbar{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  
-  button:hover {
-    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-    color: #d6d6d6;
-    transition: 500ms;
+  .navlinks{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .button-design{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav-text{
+    font-size: 30px;
+    padding: 10px;
+    list-style-type: none;
   }

@@ -37,7 +37,7 @@ body{
     margin: 12px;
 }
 .input_style:focus{
-    border-bottom: 0px solid rgb(215, 215, 73);
+    border-bottom: 3px solid rgb(215, 215, 73);
 }
 .shadow{
     box-shadow:
@@ -59,9 +59,3 @@ body{
     outline:none;
     margin: 5px;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  

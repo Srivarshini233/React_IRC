@@ -1,4 +1,4 @@
-
+import './Assets/CSS/nav.css'
 import './Assets/CSS/WelcomeToggle.css';
 import WelcomeToggle from './component/WelcomeToggle';
 const App=()=>{
