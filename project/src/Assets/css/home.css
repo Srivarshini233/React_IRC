@@ -39,7 +39,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 100px 20px;
-    height:100vh;
+    height:50vh;
   }
   
   .btn {
@@ -77,13 +77,13 @@ body {
     width: 100%;
   }
   .card1{
-    height:25vh;
-    width:10vw;
-    background-color: white;
+    height:40vh;
+    width:15vw;
+   
   }
   .image1{
-        height: 20vh;
-        width:10vw;
+        height: 30vh;
+        width:15vw;
   }
   .cssbuttons-io-button {
     background: #a370f0;
@@ -139,3 +139,25 @@ body {
     transform: scale(0.95);
   }
   
+.images-align{
+  display: flex;
+  flex-direction: row;
+  padding:20px;
+  margin:0px;
+  justify-content: space-around;
+}
+
+ .home-images{
+  padding:0px;
+  height:30vh;
+  width:15vw;
+  border-radius: 10px;
+  border-color: #2a0458;
+  justify-content: space-around;
+ } 
+ .btn-imag-style{
+    border-radius: 25px;
+    padding:10px;
+    justify-content: space-around;
+
+ }
