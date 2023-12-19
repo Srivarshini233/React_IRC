@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('page1');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'page1':
+        return (
+          <div>
+            <h1>This is Page 1</h1>
+            <p>Content for Page 1 goes here.</p>
+          </div>
+        );
+      case 'page2':
+        return (
+          <div>
+            <h1>This is Page 2</h1>
+            <p>Content for Page 2 goes here.</p>
+          </div>
+        );
+      // Add more cases for additional pages as needed
+
+      default:
+        return null;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <button onClick={() => setCurrentPage('page1')}>Go to Page 1</button>
+        <button onClick={() => setCurrentPage('page2')}>Go to Page 2</button>
+        {/* Add more buttons for additional pages as needed */}
+      </div>
+      <div>{renderPage()}</div>
     </div>
   );
-}
+};
 
 export default App;

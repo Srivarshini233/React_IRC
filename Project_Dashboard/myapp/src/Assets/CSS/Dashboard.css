@@ -64,8 +64,7 @@
     background-color: transparent;
 }
 .panelleft1{
-    height:80vh
-    
+    height:80vh;
 }
 .logout{
     display: flex;
@@ -83,4 +82,10 @@
 .main-panel:hover{
     border-left: 2px solid white;
     border-top: 2px solid white;
+  }
+  .btn-1{
+        background-color: transparent;
+        outline: none;
+        margin:none;
+       
   }
