@@ -1,0 +1,86 @@
+.side-panel-background{
+    background-image: url("https://img.freepik.com/premium-photo/hand-holding-virtual-info-graphics-with-trolley-cart-icons-technology-online-shopping-business-concept_50039-3922.jpg?size=626&ext=jpg&ga=GA1.1.1525579097.1667655354&semt=sph");
+    background-size: cover;
+    position:fixed;
+}
+.Dashboard1{
+    color:white;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+.Nav-panel{
+    display: flex;
+    display: row;
+    justify-content: flex-end;
+    background-color:transparent;
+    
+}
+.Nav-panel:hover{
+  border-bottom: 2px solid white;
+}
+
+.side-panel{
+    display: flex;
+    flex-direction: column;
+    width:10vw;
+    height:100vh;
+    background-color: transparent;
+}
+.side-panel:hover{
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+  }
+.dashboard-panel{
+    display: flex;
+    flex-direction: row;  
+}
+.real-dashboard{
+    position: fixed;
+    left:0%;
+}
+.Nav-panelh1{
+    padding:30px;
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.Nav-panellefth1{
+    padding:10px;
+    text-decoration: none;
+    display: flex;
+    font-size: 15px;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.side-panel{
+    height: 90vh;
+    background-color: transparent;
+}
+.panelleft1{
+    height:80vh
+    
+}
+.logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color:white;
+    font-size: 10px;
+}
+.main-panel{
+    height:90vh;
+    width:90vw;
+    
+}
+.main-panel:hover{
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+  }
