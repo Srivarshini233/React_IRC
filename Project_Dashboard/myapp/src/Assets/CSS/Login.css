@@ -1,11 +1,95 @@
-#ta{
-    width: 100%;
-    height:100%;
+.bg-container{
+  background-image: url("https://img.freepik.com/premium-photo/hand-holding-virtual-info-graphics-with-trolley-cart-icons-technology-online-shopping-business-concept_50039-3922.jpg?size=626&ext=jpg&ga=GA1.1.1525579097.1667655354&semt=sph");
+  background-size:cover;
+  height:100%;
+  width:100vw;
+  position:fixed;
   }
-  #tabl{
- 
+.container1{
+  background-color: transparent;
+     height:60vh;
+      width:28vw;
+      text-align: center;
+      margin:none;
+      outline: none;
+      padding:5px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center horizontally */
+      align-items: center; 
+      position:fixed;
+      border-left: 3px solid white;
+      border-top: 3px solid white;
+}
+.shadow{
+  box-shadow:
+56.7px 56.7px 2.2px rgba(0, 0, 0, 0.033),
+67.2px 67.2px 5.3px rgba(0, 0, 0, 0.041),
+74.5px 74.5px 10px rgba(0, 0, 0, 0.047),
+82px 82px 17.9px rgba(0, 0, 0, 0.054),
+90.4px 90.4px 33.4px rgba(0, 0, 0, 0.062),
+100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.input_style{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  padding:1rem;
+  border:none;
+  outline:none;
+  height: 4vh;
+  background-color: transparent;
+  width:20vw;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 10px;
+  margin: 12px;
+}
+.input_style:focus{
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  background-color: aliceblue;
+}
+.input_style1{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  padding:1rem;
+  border:none;
+  outline:none;
+  height: 3vh;
+  background-color: transparent;
+  width:20vw;
+  border-bottom: 3px solid white;
   
-    text-align: center;
-    margin-left: 50%;
-    background-color:lightblue;
-  }
+  border-radius: 10px;
+  margin: 5px;
+}
+.input_style1:focus{
+  border-bottom: 2px solid black;
+  background-color: aliceblue; 
+}
+.button1{
+  
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 20px;
+  height:5vh;
+  padding:10px;
+  margin:5px;
+  width:8vw;
+  border:none;
+  outline:none;
+}
+.heading4{
+  font-size: 24px;
+  color: white;
+}

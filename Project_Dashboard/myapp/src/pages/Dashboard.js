@@ -1,21 +1,35 @@
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import React, { useState } from 'react';
 import '../Assets/CSS/Dashboard.css';
 import { IconButton } from '@mui/material';
 import AboutUs from '../component/AboutUs';
-import Profile from '../component/Profile';
+import Profile from '../component/User';
+import Setting from '../component/Setting';
+import { Navigate } from 'react-router-dom';
+import Panel from '../component/Panel';
 
 
 
 function Dashboard() {
-    const [currentPage, setCurrentPage] = useState('Panel');
+    const [currentPage, setCurrentPage] = useState('');
+    const navigate = useNavigate();
+    const handleLogout=()=>{
+        navigate(`/Login`);
+        alert('logout-succesfully')
+    }
     const renderPage = () => {
         switch (currentPage) {
             case 'Profile':
                 return (
                     <div>
                        <Profile/>
+                    </div>
+                );
+            case '':
+                return (
+                    <div>
+                       <Panel/>
                     </div>
                 );
             case 'Contact':
@@ -28,9 +42,8 @@ function Dashboard() {
             case 'Setting':
                 return (
                     <div>
-                        <h1>This is Page 2</h1>
-                        <p>Content for Page 2 goes here.</p>
-                    </div>
+                        <Setting/>
+                        </div>
                 );
             
             default:
@@ -41,8 +54,8 @@ function Dashboard() {
             <>
                 <div class="side-panel-background">
                     <div className='Nav-panel'>
-                        <h1><Link to="" className='Nav-panelh1 '><svg className="logos" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>Home</Link></h1>
-                        <h1><Link to="" className='Nav-panelh1'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>User</Link></h1>
+                        <h1><Link to="/" className='Nav-panelh1 '><svg className="logos" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>Home</Link></h1>
+                        <h1><Link to="" className='Nav-panelh1' onClick={() => setCurrentPage('Profile')}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>User</Link></h1>
                         <h1><Link to="" className='Nav-panelh1'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1" /><circle cx="19" cy="21" r="1" /><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Cart</Link></h1>
                         <h1><Link to="" className='Nav-panelh1'>return</Link></h1>
                     </div>
@@ -55,11 +68,13 @@ function Dashboard() {
                                     <IconButton className ="btn-1" onClick={() => setCurrentPage('Setting')}><h1 className='Nav-panellefth1'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" /><circle cx="12" cy="12" r="3" /></svg>Settings</h1></IconButton>
                                 </div>
                                 <div class="logout">
-                                    <h1 className='logout1 '>Log-Out</h1>
+                                   <button className='btn-logout'> <h1 className='logout1' onClick={()=>handleLogout()}>LogOut</h1></button>
                                 </div>
                             </div>
                             <div className='main-panel'>
-                            <div>{renderPage()}</div>
+                            <div>
+                                {renderPage()}
+                            </div>
                             </div>
                         </div>
                     </div>

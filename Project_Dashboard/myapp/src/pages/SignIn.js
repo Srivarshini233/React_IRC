@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, navigate, useNavigate } from 'react-router-dom';
+
+
 const SignUp = ({ onSignUp }) => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -19,7 +21,7 @@ const SignUp = ({ onSignUp }) => {
         // For simplicity, we'll use a mock API call
         try {
             // Replace this with your actual API endpoint
-            const response = await fetch('https://6581a38a3dfdd1b11c43ce3e.mockapi.io/post', {
+            const response = await fetch('https://6583244202f747c8367b278f.mockapi.io/e-com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -38,63 +40,63 @@ const SignUp = ({ onSignUp }) => {
         } catch (error) {
             console.error('Error during account creation:', error);
         }
-        
-        
+
+
 
     };
 
     return (
 
-
-        <div>
-            <h2>Create Account</h2>
+    <div className='bg-container'>
+        <div className='container1 shadow'>
+            <h2 className='heading4'>Create Account</h2>
             <form onSubmit={handleSignUp}>
-                <label>
-                    Username:
                     <input
                         type="text"
                         value={username}
+                        placeholder='Username'
+                        className='input_style1'
                         onChange={(e) => setUsername(e.target.value)}
                         required
                     />
-                </label>
                 <br />
-                <label>
-                    Email:
+                
                     <input
                         type="email"
                         value={email}
+                        placeholder="email"
+                        className='input_style1'
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
-                </label>
+                
                 <br />
-                <label>
-                    Password:
+    
                     <input
                         type="password"
+                        placeholder='password'
+                        className='input_style1'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
-                </label>
                 <br />
-                <label>
-                    Confirm Password:
+               
                     <input
                         type="password"
+                        placeholder='confirmPassword'
+                        className='input_style1'
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
                         required
                     />
-                </label>
                 <br />
                 <Link to="/Dashboard">
-                    <button type="submit">Create Account</button>
+                    <button onSubmit={handleSignUp} className='button1' type="submit">Create</button>
                 </Link>
             </form>
         </div>
+        </div>
     );
 };
-
 export default SignUp;

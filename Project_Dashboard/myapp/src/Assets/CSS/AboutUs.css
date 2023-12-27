@@ -70,3 +70,14 @@ main {
     font-variation-settings: "wght" 900, "wdth" 200;
   }
 }
+.contactUs{
+  font-size: 20px;
+  
+}
+.contact-page{
+  margin:30px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

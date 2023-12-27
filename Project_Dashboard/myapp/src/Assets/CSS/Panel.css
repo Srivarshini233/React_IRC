@@ -1,0 +1,15 @@
+.paneldb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:50px;
+    background-color:transparent;
+}
+.panalheading{
+    color:white;
+    font-size: 50px;
+}
+.panalpara{
+    color:white;
+    font-size: 25px;
+}

@@ -2,11 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width:100vw;
     box-sizing: border-box;
+    
   }
   
   .home {
     text-align: center;
+    height: 100%;
+    width:100vw;
+    
   }
   
   header {
@@ -57,13 +63,24 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px 20px;
+    
+  }
+  .product-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-image: url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?size=626&ext=jpg&ga=GA1.1.1525579097.1667655354&semt=ais');
+    background-size: cover;
+    width:100vw;
+    height:100%;
   }
   
   .product {
     max-width: 300px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 2px solid black;
     border-radius: 5px;
   }
   
@@ -74,16 +91,44 @@ body {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
   }
   .card1{
     height:40vh;
     width:15vw;
-   
   }
+  .card11:hover{
+    border:5px solid white;
+  }
+  .card12:hover{
+    border:5px solid white;
+  }
+  .card13:hover{
+    border:5px solid white;
+  }
+  .card14:hover{
+    border:5px solid white;
+  }
+  .card15:hover{
+    border:5px solid white;
+  }
+  .card16:hover{
+    border:5px solid white;
+  }
+  .card17:hover{
+    border:5px solid white;
+  }
+  .card18:hover{
+    border:5px solid white;
+  }
+
   .image1{
         height: 30vh;
         width:15vw;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
   }
   .cssbuttons-io-button {
     background: #a370f0;
@@ -179,6 +224,7 @@ body {
    width:100vw;
    height:100vh;
    overflow: hidden;
+   position:fixed;
 }
 .bg-container{
     display: flex;
@@ -215,64 +261,16 @@ body {
     padding: 10px;
     list-style-type: none;
   }
-  .bg-container{
-    height:70vh;
-    width:100vw;
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-.container1{
-        background: #d9a7c7;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        height:50vh;
-        width:25vw;
-        text-align: center;
-        margin:none;
-        outline: none;
-        padding:5px;
-        border-radius: 16px;
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; 
+.prod-card{
+   display: flex;
+   flex-direction:row;
 }
-.shadow{
-    box-shadow:
-  56.7px 56.7px 2.2px rgba(0, 0, 0, 0.033),
-  67.2px 67.2px 5.3px rgba(0, 0, 0, 0.041),
-  74.5px 74.5px 10px rgba(0, 0, 0, 0.047),
-  82px 82px 17.9px rgba(0, 0, 0, 0.054),
-  90.4px 90.4px 33.4px rgba(0, 0, 0, 0.062),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
+.svgimage{
+  padding-left:10px;
+  margin:10px;
 }
-.input_style{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-direction: row;
-    padding:1rem;
-    border:none;
-    outline:none;
-    height: 4vh;
-    background-color: white;
-    width:20vw;
-    border-bottom: 3px solid transparent;
-    border-radius: 10px;
-    margin: 12px;
-}
-.input_style:focus{
-    border-bottom: 0px solid rgb(215, 215, 73);
-}
-.button1{
-    background-color: rgb(200, 175, 229);
-    border-radius: 10px;
-    font-size: 20px;
-    height:5vh;
-    padding:10px;
-    margin:5px;
-    width:8vw;
-    border:none;
-    outline:none;
+.svgimages{
+  padding:10px;
+  display: flex;
+  justify-content: center;
 }

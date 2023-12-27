@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-
+import '../Assets/CSS/Login.css'
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "./UserContext"; // Import UserContext
@@ -8,15 +8,12 @@ import { UserContext } from "./UserContext"; // Import UserContext
 function LoginTemplate() {
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
-  const [loginDetails, setLoginDetails] = useState({
-    username: "",
-    password: "",
-  });
+  const [loginDetails, setLoginDetails] = useState([]);
   const { setUser } = useContext(UserContext);
 
   useEffect(() => {
     axios
-      .get("https://6581a38a3dfdd1b11c43ce3e.mockapi.io/post")
+      .get("https://6583244202f747c8367b278f.mockapi.io/e-com")
       .then((response) => setUsers(response.data))
       .catch((error) => console.error("Error:", error));
   }, []);
@@ -28,14 +25,15 @@ function LoginTemplate() {
     );
 
     console.log(foundUsers);
+    
 
     if (foundUsers.length > 0) {
       setUser(foundUsers[0]);
-    
+      alert("Login Succesfully");
       navigate("/Dashboard");
     } else {
       alert("Account not found please register");
-      navigate("/Home")
+      
     }
   };
 
@@ -43,24 +41,16 @@ function LoginTemplate() {
     setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
   };
   return (
-    <div id="ta">
-      <table border="1">
-        <tr>
-          <td>
-            <img src="hospital.jpg" width={800} height={600} />
-          </td>
-          <td width={600} height={600} id="tabl">
-            <div>
-              <img src="logo.jpg" style={{ width: "185px" }} alt="logo" />
-              
-              <h4>Please login to your account</h4>
+    <div className="bg-container">
+      <div className="container1 shadow">
+              <h4 heading4>Please login to your account</h4>
               <form onSubmit={handleLogin}>
-                <div class="form-outline mb-4">
+                <div >
                   <lable>
                     <input
-                      type="email"
+                      type="username"
                       name="username"
-                      className="form-control"
+                      className="input_style"
                       placeholder="Username"
                       label="Required"
                       value={loginDetails.username}
@@ -69,26 +59,25 @@ function LoginTemplate() {
                   </lable>
                 </div>
                 <br></br>
-                <div class="form-outline mb-4">
+                <div >
                   <lable>
                     <input
                       type="password"
                       name="password"
-                      className="form-control"
+                      className="input_style"
                       placeholder="Password"
                       value={loginDetails.password}
                       onChange={handleInputChange}
                       label="Required"
                     />
                   </lable>
-                  <label class="form-label" for="form2Example22"></label>
+                
                 </div>
                 <br></br>
                 <div class="text-center pt-1 mb-5 pb-1">
-                  <Link to="form">
+                  <Link to="/Dashboard">
                     <button onClick={handleLogin}
-                      className="su1"
-                      class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                      className="button1"
                       type="submit"
                     >
                       Log in
@@ -102,16 +91,13 @@ function LoginTemplate() {
                   <h3>Don't have an account?</h3>
                 </p>
                 <Link to="/SignIn">
-                  <button type="button" class="btn btn-outline-danger">
-                    Create new
+                  <button type="button" className="button1">
+                    Create 
                   </button>
                 </Link>
               </div>
             </div>
-          </td>
-        </tr>
-      </table>
-    </div>
+      </div>
   );
 }
 

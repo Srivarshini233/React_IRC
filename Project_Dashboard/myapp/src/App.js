@@ -6,10 +6,9 @@ import SignUp from './pages/SignIn';
 import Categories from './pages/Categories';
 import Dashboard from './pages/Dashboard';
 import AboutUs from './component/AboutUs';
-import Profile from './component/Profile';
+import User from './component/User';
 import Setting from './component/Setting';
-
-
+import Product from './pages/Product';
 
 import { Route,Routes } from 'react-router-dom';
 import './Assets/CSS/style.css'
@@ -25,10 +24,11 @@ function App(){
             <Route path="/Login" element={<Login/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="/aboutUs" element={<AboutUs />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/User" element={<User />} />
             <Route path="/setting" element={<Setting />} />
             <Route path="/SignIn" element={<SignUp />} />
-
+            <Route path="/Product" element={<Product />} />
+        
            </Routes>
         </>
     );

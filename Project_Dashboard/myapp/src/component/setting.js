@@ -1,9 +1,9 @@
 import React from "react";
-function Setting(){
+import '../Assets/CSS/Setting.css';
+function Setting() {
     return (
-        <div>
-            Contact
-        </div>
+        <>
+        </>
     )
 }
 export default Setting;
