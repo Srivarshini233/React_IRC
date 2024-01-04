@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Asset/CSS/style.css'; 
+import {Toaster,toast} from 'react-hot-toast'
+import Login from './componenet/login';
 
 const App = () => {
   const [username, setUsername] = useState('');
@@ -17,7 +19,7 @@ const App = () => {
 
   const handleLogin = () => {
     if (username.length >= 8) {
-        console.log('Login successful');
+       toast.success('Logged In successfully')
     } 
     else{
         setErrorMessage1('Username must contain more than 8 character')
@@ -55,6 +57,7 @@ const App = () => {
   };
 
   return (
+   
     <div >
         <div className = 'shadow'>
       <h2>Login</h2>
@@ -119,7 +122,13 @@ const App = () => {
       </div>
       <button onClick={handleLogin} className='button'>Login</button>
     </div>
+    <Toaster
+        position="top-center"
+        duration="4000"
+        reverseOrder={false}
+      />
     </div>
+   
   );
 };
 
